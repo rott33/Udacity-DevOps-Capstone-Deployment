@@ -7,7 +7,7 @@ var handler = function(request, response) {
 	var remoteIp = request.connection.remoteAddress
 	console.log("Received request from " + remoteIp);
 	response.writeHead(200);
-	response.end("Hello world, you've reached this app version 1.1 running on Kubernetes pod " + os.hostname() + ".\n");
+	response.end("Hello world, you've reached this app version 1.2 running on Kubernetes pod " + os.hostname() + ".\n");
 };
 
 var www = http.createServer(handler);
