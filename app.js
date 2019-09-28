@@ -1,7 +1,7 @@
 const http = require('http');
 const os = require('os');
 
-console.log("Node app starting...");;
+console.log("Node app starting...");
 
 var handler = function(request, response) {
 	var remoteIp = request.connection.remoteAddress
